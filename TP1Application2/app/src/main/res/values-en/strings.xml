@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="selectionner_date">Select a date:</string>
+    <string name="evenements">Events for this date:</string>
+    <string name="ajouter_evenement">Add an event</string>
+    <string name="ajouter">Add</string>
+    <string name="erreur_evenement">Please enter a valid event</string>
+    <string name="pas_evenement">No events</string>
+</resources>
+

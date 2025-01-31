@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_lang">
+        <item
+            android:id="@+id/menu_lang_fr"
+            android:title="🇫🇷 Français" />
+        <item
+            android:id="@+id/menu_lang_en"
+            android:title="🇬🇧 English" />
+    </group>
+</menu>

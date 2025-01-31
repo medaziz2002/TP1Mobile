@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TP1Application2</string>
+    <string name="selectionner_date">Sélectionnez une date :</string>
+    <string name="evenements">Événements pour cette date :</string>
+    <string name="ajouter_evenement">Ajoutez un événement</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="erreur_evenement">Veuillez entrer un événement valide</string>
+    <string name="pas_evenement">Aucun événement</string>
+</resources>

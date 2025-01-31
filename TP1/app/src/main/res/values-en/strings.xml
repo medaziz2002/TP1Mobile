@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Registration Form</string>
+    <string name="title">Registration Form</string>
+
+    <!-- Labels des champs -->
+    <string name="label_nom">Name :</string>
+    <string name="label_prenom">First Name :</string>
+    <string name="label_age">Age :</string>
+    <string name="label_domaine">Field of Expertise :</string>
+    <string name="label_pays">Country :</string>
+    <string name="label_code_pays">Country Code :</string>
+    <string name="label_telephone">Phone Number :</string>
+
+    <!-- Hints des champs -->
+    <string name="hint_nom">Enter your name</string>
+    <string name="hint_prenom">Enter your first name</string>
+    <string name="hint_age">Enter your age</string>
+    <string name="hint_telephone">Enter your phone number</string>
+
+    <!-- Bouton -->
+    <string name="valider">Submit</string>
+
+    <!-- Erreurs -->
+    <string name="error_nom">The Name field is required</string>
+    <string name="error_nom_format">The name must contain only letters</string>
+    <string name="error_prenom">The First Name field is required</string>
+    <string name="error_prenom_format">The first name must contain only letters</string>
+    <string name="error_age">The Age field is required</string>
+    <string name="error_age_format">The age must be a valid number</string>
+    <string name="error_telephone">Please enter a phone number</string>
+    <string name="error_domaine">Please select a field of expertise</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="confirm_message">Do you really want to confirm your registration?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="imprimer_pdf">Print to PDF</string>
+    <string name="appeler">Call</string>
+    <string name="phone_number">Phone number</string>
+    <string name="retour">Back</string>
+    <string name="pdf_saved">PDF successfully saved at:</string>
+    <string name="pdf_error">Error while creating the PDF</string>
+    <string name="confirmation_title">Data Confirmation</string>
+    <string name="confirmation_message">The entered information is:</string>
+    <string name="welcome_third_activity">Welcome to the third activity!</string>
+    <!-- Confirmation -->
+    <string name="toast_succes">Name: %1$s\nFirst Name: %2$s\nAge: %3$s\nField: %4$s\nCountry: %5$s\nNumber: %6$s %7$s</string>
+</resources>

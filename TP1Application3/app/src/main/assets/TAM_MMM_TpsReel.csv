@@ -1,0 +1,57 @@
+Station Départ,Station Arrivée,Heure Départ,Latitude,Longitude
+Mosson,Stade de la Mosson,06:00,43.616253,3.819692
+Stade de la Mosson,Halles de la Paillade,06:03,43.621136,3.817375
+Halles de la Paillade,Saint-Paul,06:06,43.627578,3.817494
+Saint-Paul,Hauts de Massane,06:09,43.630648,3.820981
+Hauts de Massane,Euromédecine,06:12,43.636356,3.822667
+Euromédecine,Malbosc - Domaine d'Ô,06:15,43.639073,3.827686
+Malbosc - Domaine d'Ô,Château d'Ô,06:18,43.634603,3.833222
+Château d'Ô,Occitanie,06:21,43.631614,3.843067
+Occitanie,Hôpital Lapeyronie,06:24,43.634583,3.848558
+Hôpital Lapeyronie,Universités des Sciences et des Lettres,06:27,43.631658,3.8526
+Universités des Sciences et des Lettres,Saint-Éloi,06:30,43.629142,3.861558
+Saint-Éloi,Boutonnet - Cité des Arts,06:33,43.627011,3.865714
+Boutonnet - Cité des Arts,Stade Philippidès,06:36,43.622592,3.868117
+Stade Philippidès,Place Albert 1er - Saint-Charles,06:39,43.618969,3.869497
+Place Albert 1er - Saint-Charles,Louis Blanc - Agora de la Danse,06:42,43.616517,3.873253
+Louis Blanc - Agora de la Danse,Corum,06:45,43.61475,3.878133
+Corum,Comédie,06:48,43.614175,3.881811
+Comédie,Gare Saint-Roch,06:51,43.608386,3.879778
+Gare Saint-Roch,Antigone,06:54,43.604842,3.880567
+Antigone,Léon Blum,06:57,43.608589,3.886636
+Léon Blum,Place de l'Europe,07:00,43.609299,3.890185
+Place de l'Europe,Rives du Lez,07:03,43.607383,3.894112
+Rives du Lez,Moularès (Hôtel de Ville),07:06,43.603998,3.895967
+Moularès (Hôtel de Ville),Port Marianne,07:09,43.600625,3.897742
+Port Marianne,Millénaire,07:12,43.601528,3.899386
+Millénaire,Place de France,07:15,43.603375,3.910831
+Place de France,Odysseum,07:18,43.603767,3.9157
+Station Départ,Station Arrivée,Heure Départ,Latitude,Longitude
+Odysseum,Place de France,07:18,43.603767,3.9157
+Place de France,Millénaire,07:15,43.603375,3.910831
+Millénaire,Port Marianne,07:12,43.601528,3.899386
+Port Marianne,Moularès (Hôtel de Ville),07:09,43.600625,3.897742
+Moularès (Hôtel de Ville),Rives du Lez,07:06,43.603998,3.895967
+Rives du Lez,Place de l'Europe,07:03,43.607383,3.894112
+Place de l'Europe,Léon Blum,07:00,43.609299,3.890185
+Léon Blum,Antigone,06:57,43.608589,3.886636
+Antigone,Gare Saint-Roch,06:54,43.604842,3.880567
+Gare Saint-Roch,Comédie,06:51,43.608386,3.879778
+Comédie,Corum,06:48,43.614175,3.881811
+Corum,Louis Blanc - Agora de la Danse,06:45,43.61475,3.878133
+Louis Blanc - Agora de la Danse,Place Albert 1er - Saint-Charles,06:42,43.616517,3.873253
+Place Albert 1er - Saint-Charles,Stade Philippidès,06:39,43.618969,3.869497
+Stade Philippidès,Boutonnet - Cité des Arts,06:36,43.622592,3.868117
+Boutonnet - Cité des Arts,Saint-Éloi,06:33,43.627011,3.865714
+Saint-Éloi,Universités des Sciences et des Lettres,06:30,43.629142,3.861558
+Universités des Sciences et des Lettres,Hôpital Lapeyronie,06:27,43.631658,3.8526
+Hôpital Lapeyronie,Occitanie,06:24,43.634583,3.848558
+Occitanie,Château d'Ô,06:21,43.631614,3.843067
+Château d'Ô,Malbosc - Domaine d'Ô,06:18,43.634603,3.833222
+Malbosc - Domaine d'Ô,Euromédecine,06:15,43.639073,3.827686
+Euromédecine,Hauts de Massane,06:12,43.636356,3.822667
+Hauts de Massane,Saint-Paul,06:09,43.630648,3.820981
+Saint-Paul,Halles de la Paillade,06:06,43.627578,3.817494
+Halles de la Paillade,Stade de la Mosson,06:03,43.621136,3.817375
+Stade de la Mosson,Mosson,06:00,43.616253,3.819692
+

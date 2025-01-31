@@ -1,0 +1,41 @@
+<resources>
+    <!-- Nom de l'application -->
+    <string name="app_name">TAM ligne1</string>
+
+    <!-- Champs de saisie -->
+    <string name="depart">Départ</string>
+    <string name="arrivee">Arrivée</string>
+    <string name="rechercher">Rechercher</string>
+    <string name="selectionner_date">Sélectionner une date</string>
+
+    <!-- Messages et boutons -->
+    <string name="confirmation">Confirmation</string>
+    <string name="confirm_message">Voulez-vous vraiment valider votre recherche ?</string>
+    <string name="confirm">Confirmer</string>
+    <string name="cancel">Annuler</string>
+
+    <!-- Erreurs -->
+    <string name="error_depart">Veuillez entrer une ville de départ.</string>
+    <string name="error_arrivee">Veuillez entrer une ville d\'arrivée.</string>
+    <string name="error_date">Veuillez sélectionner une date valide.</string>
+
+    <!-- Résultats -->
+    <string name="horaires_disponibles">Horaires disponibles :</string>
+    <string name="aucun_resultat">Aucun train trouvé pour cet itinéraire.</string>
+
+    <!-- Impression PDF -->
+    <string name="imprimer_pdf">Imprimer en PDF</string>
+    <string name="pdf_saved">PDF enregistré dans Téléchargements.</string>
+    <string name="pdf_error">Erreur lors de l\'enregistrement du PDF.</string>
+
+    <!-- Appel téléphone -->
+    <string name="appeler">Appeler</string>
+    <string name="num_tel">Numéro de téléphone :</string>
+
+    <!-- 🔥 Ajout : Activer la localisation -->
+    <string name="turn_on_location">Activer la localisation</string>
+    <string name="location_suggestion">Nous pouvons suggérer les gares les plus proches de votre position actuelle.</string>
+
+    <!-- 🔥 Ajout : Destinations récentes -->
+    <string name="recent">Récents</string>
+</resources>
