@@ -14,7 +14,7 @@ class LandingPageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.landing_page)
+        setContentView(R.layout.landing_page1)
         FirebaseApp.initializeApp(this)
 
         val loginButton: Button = findViewById(R.id.login)

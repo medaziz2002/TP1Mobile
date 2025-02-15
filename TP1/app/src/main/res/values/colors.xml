@@ -5,7 +5,7 @@
 
     <!-- Définir la couleur de fond des EditText -->
     <color name="editTextBG">#F1F1F1</color>
-
+    <color name="background">#FFFFFF</color>
     <!-- Définir la couleur du texte -->
     <color name="textColor">#000000</color>
 

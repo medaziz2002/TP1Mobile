@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         FirebaseApp.initializeApp(this)
-        setContentView(R.layout.login)
+        setContentView(R.layout.login1)
 
         mAuth = FirebaseAuth.getInstance()
 

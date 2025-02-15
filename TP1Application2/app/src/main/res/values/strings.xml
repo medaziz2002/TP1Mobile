@@ -8,8 +8,8 @@
     <string name="pas_evenement">Aucun événement</string>
 
         <string name="agenda_prompt">Prêt à gérer votre agenda ?</string>
-        <string name="login">Login</string>
-        <string name="signup">Signup</string>
+        <string name="login">Se connecter</string>
+        <string name="signup">S\'inscrire</string>
     <string name="email">Email</string>
     <string name="password">Mot de passe</string>
     <string name="event_updated">Événement mis à jour</string>
@@ -24,13 +24,12 @@
 
         <string name="confirm_password">Confirmer le mot de passe</string>
 
-
     <string name="error_fill_fields">Veuillez remplir tous les champs !</string>
     <string name="successful_login">Connexion réussie !</string>
     <string name="email_not_verified">Utilisateur non activé. Veuillez vérifier vos e-mails.</string>
     <string name="error_incorrect_email_password">Email ou mot de passe incorrect. %1$s</string>
 
-
+    <string name="already_a_member">Déjà membre ? Se connecter ici</string>
         <string name="successful_signup">Inscription réussie ! Vérification par email envoyée à %1$s</string>
         <string name="user_data_saved">Données utilisateur enregistrées avec succès !</string>
         <string name="failed_to_save_user_data">Échec de l enregistrement des données utilisateur. %1$s</string>

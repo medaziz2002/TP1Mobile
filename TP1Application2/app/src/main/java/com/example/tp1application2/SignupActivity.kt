@@ -24,7 +24,7 @@ class SignupActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.signup)
+        setContentView(R.layout.signup1)
 
         mAuth = FirebaseAuth.getInstance()
 
@@ -40,7 +40,7 @@ class SignupActivity : AppCompatActivity() {
             signUp()
         }
         back.setOnClickListener {
-            startActivity(Intent(this, LandingPageActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 

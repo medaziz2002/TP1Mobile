@@ -23,7 +23,7 @@
     <string name="error_incorrect_email_password">Incorrect email or password. %1$s</string>
 
 
-
+    <string name="already_a_member">Already a member? Login Here</string>
         <string name="event_deleted">Event deleted</string>
 
 
