@@ -166,8 +166,10 @@ class MainActivity : AppCompatActivity() {
         inputTelephone = findViewById(R.id.input_telephone)
         btnValider = findViewById(R.id.btn_valider)
         navigationView = findViewById(R.id.navigation_view)
-        btnMenu = findViewById(R.id.btn_menu)
         drawerLayout = findViewById(R.id.drawer_layout)
+        btnMenu = findViewById(R.id.btn_menu) // Ajouté pour lier btnMenu
+
+
 
 
 
@@ -258,17 +260,9 @@ class MainActivity : AppCompatActivity() {
                 inputTelephone.error = getString(R.string.error_telephone)
                 return@setOnClickListener
             }
+            showConfirmationDialog(nom, prenom, age, domaine, paysSelectionne, codePays, telephone)
 
-            val intent = Intent(this, ConfirmationActivity::class.java).apply {
-                putExtra("nom", nom)
-                putExtra("prenom", prenom)
-                putExtra("age", age)
-                putExtra("domaine", domaine)
-                putExtra("pays", paysSelectionne)
-                putExtra("codePays", codePays)
-                putExtra("telephone", telephone)
-            }
-            startActivity(intent)
+
         }
 
 
@@ -280,10 +274,18 @@ class MainActivity : AppCompatActivity() {
 
         // Bouton "Confirmer"
         builder.setPositiveButton(getString(R.string.confirm)) { _, _ ->
-
-            Toast.makeText(this, getString(R.string.toast_succes, nom, prenom, age, domaine, pays, codePays, telephone), Toast.LENGTH_LONG).show()
+            // Si confirmé, démarrer l'activité avec les informations passées
+            val intent = Intent(this, ConfirmationActivity::class.java).apply {
+                putExtra("nom", nom)
+                putExtra("prenom", prenom)
+                putExtra("age", age)
+                putExtra("domaine", domaine)
+                putExtra("pays", pays)
+                putExtra("codePays", codePays)
+                putExtra("telephone", telephone)
+            }
+            startActivity(intent)
         }
-
 
         builder.setNegativeButton(getString(R.string.cancel)) { dialog, _ ->
             dialog.dismiss()

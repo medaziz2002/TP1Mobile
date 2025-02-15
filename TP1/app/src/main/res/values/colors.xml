@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Définir la couleur principale -->
+    <color name="colorPrimary">#6200EE</color>
+
+    <!-- Définir la couleur de fond des EditText -->
+    <color name="editTextBG">#F1F1F1</color>
+
+    <!-- Définir la couleur du texte -->
+    <color name="textColor">#000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!-- Définir la couleur blanche -->
+    <color name="white">#FFFFFF</color>
+
 </resources>

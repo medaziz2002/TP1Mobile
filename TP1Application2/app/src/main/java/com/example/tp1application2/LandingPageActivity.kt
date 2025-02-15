@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.FirebaseApp;
 class LandingPageActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.landing_page)
@@ -27,4 +28,5 @@ class LandingPageActivity : AppCompatActivity() {
             startActivity(Intent(this, SignupActivity::class.java))
         }
     }
+
 }

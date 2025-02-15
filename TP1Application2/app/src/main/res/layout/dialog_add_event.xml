@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background_gradient">
+
+    <!-- EditText for event input -->
+    <EditText
+        android:id="@+id/editEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ajouter_evenement"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/edit_text_bg"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Buttons container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="10dp">
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_marginEnd="16dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_cancel_bg"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textSize="14sp" />
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ajouter"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_add_bg"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

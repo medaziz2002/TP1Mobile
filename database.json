@@ -1,0 +1,17 @@
+{
+    "users": {
+      "{userId}": {
+        "username": "",
+        "email": "",
+        "role": "",
+        "events": {
+          "{eventId}": {
+            "date": "",
+            "description": ""
+         
+          }
+        }
+      }
+    }
+  }
+  

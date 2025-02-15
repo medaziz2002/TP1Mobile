@@ -5,34 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
 
     <TextView
-        android:layout_width="228dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginTop="150dp"
-        android:text="Prêt a       parcourir               le  monde?"
+        android:text="@string/agenda_prompt"
         android:textColor="@color/white"
         android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="32sp" />
 
-        android:textSize="50dp"
-
-        />
     <Button
         android:id="@+id/login"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:text="Login"
-        android:textSize="29dp"
-        android:layout_marginTop="150dp"
-        android:layout_gravity="center"/>
+        android:text="@string/login"
+        android:textSize="29sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center" />
+
     <Button
         android:id="@+id/signup"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:text="Signup"
-        android:textSize="29dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"/>
+        android:text="@string/signup"
+        android:textSize="29sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
 </LinearLayout>

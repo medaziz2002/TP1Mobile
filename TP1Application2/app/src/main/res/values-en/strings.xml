@@ -6,5 +6,39 @@
     <string name="ajouter">Add</string>
     <string name="erreur_evenement">Please enter a valid event</string>
     <string name="pas_evenement">No events</string>
+    <string name="agenda_prompt">Ready to manage your agenda?</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="back">Back</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="modify">modify</string>
+
+    <string name="event_updated">Event updated</string>
+    <string name="error_fill_fields">Please fill in all fields!</string>
+    <string name="successful_login">Login successful!</string>
+    <string name="email_not_verified">User not activated. Please check your email.</string>
+    <string name="error_incorrect_email_password">Incorrect email or password. %1$s</string>
+
+
+
+        <string name="event_deleted">Event deleted</string>
+
+
+
+
+        <string name="successful_signup">Sign up successful! Email verification sent to %1$s</string>
+        <string name="user_data_saved">User data saved successfully!</string>
+        <string name="failed_to_save_user_data">Failed to save user data. %1$s</string>
+        <string name="failed_to_send_email_verification">Failed to send email verification. %1$s</string>
+        <string name="failed_to_update_username">Failed to update username. %1$s</string>
+        <string name="user_is_null_after_signup">User is null after sign up.</string>
+        <string name="signup_failed">Sign up failed. %1$s</string>
+        <string name="passwords_do_not_match">Passwords do not match.</string>
+
+
+
 </resources>
 

@@ -8,8 +8,8 @@
     <string name="label_age">Age :</string>
     <string name="label_domaine">Field of Expertise :</string>
     <string name="label_pays">Country :</string>
-    <string name="label_code_pays">Country Code :</string>
-    <string name="label_telephone">Phone Number :</string>
+    <string name="label_code_pays">Country Code</string>
+    <string name="label_telephone">Phone Number</string>
 
     <!-- Hints des champs -->
     <string name="hint_nom">Enter your name</string>
