@@ -44,11 +44,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        // Initialiser les vues
         inputDepart = findViewById(R.id.input_depart)
         inputArrivee = findViewById(R.id.input_arrivee)
         btnRechercher = findViewById(R.id.btn_rechercher)
-        sectionLocalisation = findViewById(R.id.section_localisation)
+
         sectionTurnOnLocation = findViewById(R.id.section_turn_on_location)
         navigationView = findViewById(R.id.navigation_view)
         drawerLayout = findViewById(R.id.drawer_layout)
@@ -71,10 +71,9 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        sectionLocalisation.visibility = View.GONE
         sectionTurnOnLocation.visibility = View.GONE
 
-
+        // Clic sur le bouton "Rechercher"
         btnRechercher.setOnClickListener {
             val from = inputDepart.text.toString().trim()
             val to = inputArrivee.text.toString().trim()
@@ -84,10 +83,10 @@ class MainActivity : AppCompatActivity() {
                 getStationIdFromName(from) { fromId ->
                     getStationIdFromName(to) { toId ->
                         if (fromId != null && toId != null) {
-
+                            // Rendre le datetime dynamique, ici on prend l'heure actuelle
                             val datetime = getCurrentDateTime()
 
-
+                            // Utilisation de l'URL pour récupérer les trajets entre les deux stations
                             val url = "https://api.sncf.com/v1/coverage/sncf/journeys?from=$fromId&to=$toId&datetime=$datetime"
                             fetchTrainJourneys(url)
                         } else {
@@ -106,7 +105,7 @@ class MainActivity : AppCompatActivity() {
         return dateFormat.format(Date())
     }
 
-
+    // Fonction pour obtenir l'ID d'une station à partir de son nom
     private fun getStationIdFromName(stationName: String, callback: (String?) -> Unit) {
         val url = "https://api.sncf.com/v1/coverage/sncf/places?q=$stationName"
 
@@ -204,7 +203,7 @@ class MainActivity : AppCompatActivity() {
                             }
 
                             runOnUiThread {
-
+                                // Mettre à jour le RecyclerView avec les sections
                                 recyclerResults.adapter = JourneyAdapter(sectionsList)
                                 sectionResults.visibility = View.VISIBLE
                                 recyclerResults.visibility = View.VISIBLE
@@ -247,7 +246,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun openNotifications() {
 
-
         val intent = Intent(this, NotificationActivity::class.java)
         startActivity(intent)
     }
@@ -269,6 +267,7 @@ class MainActivity : AppCompatActivity() {
         LocaleHelper.setLocale(this, lang)
         recreate()
     }
+
 
 
 

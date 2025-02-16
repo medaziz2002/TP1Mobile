@@ -21,14 +21,14 @@ class TicketActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.reservation)
 
-        // Initialiser les vues
+
         recyclerView = findViewById(R.id.reservations_recyclerview)
         btnPrint = findViewById(R.id.print_button)
 
-        // Configurer le RecyclerView
+
         setupRecyclerView()
 
-        // Configurer le bouton d'impression
+
         btnPrint.setOnClickListener {
             Toast.makeText(this, "Impression du ticket...", Toast.LENGTH_SHORT).show()
             // Ajouter ici la logique pour imprimer le ticket
@@ -51,7 +51,7 @@ class TicketActivity : AppCompatActivity() {
             .setQuery(query, Reservation::class.java)
             .build()
 
-        // Configurer l'adaptateur
+
         adapter = ReservationAdapter(options)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
@@ -59,11 +59,11 @@ class TicketActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        adapter.startListening() // Démarrer l'écoute des données Firestore
+        adapter.startListening()
     }
 
     override fun onStop() {
         super.onStop()
-        adapter.stopListening() // Arrêter l'écoute des données Firestore
+        adapter.stopListening()
     }
 }

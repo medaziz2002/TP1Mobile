@@ -2,10 +2,10 @@
     <group android:id="@+id/group_lang">
         <item
             android:id="@+id/menu_lang_fr"
-            android:title="🇫🇷 Français" />
+            android:title="@string/menu_lang_fr" />
         <item
             android:id="@+id/menu_lang_en"
-            android:title="🇬🇧 English" />
+            android:title="@string/menu_lang_en" />
     </group>
 
     <!-- Nouveau groupe pour les autres options -->
@@ -13,17 +13,16 @@
         <!-- Option Notifications -->
         <item
             android:id="@+id/menu_notifications"
-            android:title="🔔 Notifications" />
+            android:title="@string/menu_notifications" />
 
         <!-- Option Réservations -->
         <item
             android:id="@+id/menu_reservations"
-            android:title="📅 Réservations" />
-
+            android:title="@string/menu_reservations" />
 
         <!-- Option Logout -->
         <item
             android:id="@+id/menu_logout"
-            android:title="🚪 Logout" />
+            android:title="@string/menu_logout" />
     </group>
 </menu>

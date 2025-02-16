@@ -30,17 +30,15 @@ class JourneyAdapter(private val sections: List<Section>) : RecyclerView.Adapter
                 Durée: ${section.duration / 60} minutes
             """.trimIndent()
 
-            // Ajouter l'écouteur de clic sur l'élément
             holder.itemView.setOnClickListener {
                 val context = holder.itemView.context
                 val builder = AlertDialog.Builder(context)
-                builder.setTitle("Réservation")
-                    .setMessage("Voulez-vous effectuer une réservation pour ce trajet ?")
-                    .setPositiveButton("Oui") { _, _ ->
+                builder.setTitle(context.getString(R.string.reservation_message))
+                    .setPositiveButton(context.getString(R.string.yes)) { _, _ ->
                         val intent = Intent(context, ReservationActivity::class.java)
                         context.startActivity(intent)
                     }
-                    .setNegativeButton("Non", null)
+                    .setNegativeButton(context.getString(R.string.no), null)
                     .show()
             }
         } else {

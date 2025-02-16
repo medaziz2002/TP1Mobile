@@ -61,7 +61,7 @@ class ReservationActivity : AppCompatActivity() {
                 if (nom.isNotEmpty() && prenom.isNotEmpty()) {
                     personnes.add(hashMapOf("nom" to nom, "prenom" to prenom))
                 } else {
-                    Toast.makeText(this, "Veuillez remplir les informations de toutes les personnes.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.error_message), Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
                 }
             }
@@ -100,12 +100,12 @@ class ReservationActivity : AppCompatActivity() {
                         }
                         .addOnFailureListener { e ->
                             Log.e("Firestore", "Erreur lors de l'ajout de la notification", e)
-                            Toast.makeText(this, "Erreur lors de l'ajout de la notification : ${e.message}", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, "${getString(R.string.error_message)} ${e.message}", Toast.LENGTH_SHORT).show()
                         }
                 }
                 .addOnFailureListener { e ->
                     Log.e("Firestore", "Erreur lors de l'ajout de la réservation", e)
-                    Toast.makeText(this, "Erreur lors de la réservation : ${e.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "${getString(R.string.error_message)} ${e.message}", Toast.LENGTH_SHORT).show()
                 }
         }
     }

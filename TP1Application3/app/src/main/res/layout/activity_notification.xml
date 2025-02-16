@@ -38,7 +38,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Notifications"
+                    android:text="@string/notifications"
                     android:textColor="@color/white"
                     android:textSize="22sp" />
 
@@ -81,7 +81,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/colorPrimary"
-                android:text="Retour"
+                android:text="@string/back"
                 android:textColor="@color/white" />
 
         </RelativeLayout>
