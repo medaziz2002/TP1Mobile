@@ -38,4 +38,30 @@
 
     <!-- 🔥 Ajout : Destinations récentes -->
     <string name="recent">Récents</string>
+
+    <string name="login">Se connecter</string>
+    <string name="profil">Profil</string>
+    <string name="signup">S\'inscrire</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+
+    <string name="username">Nom utilisateur</string>
+
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="back">Retour</string>
+    <string name="error_fill_fields">Veuillez remplir tous les champs !</string>
+    <string name="successful_login">Connexion réussie !</string>
+    <string name="email_not_verified">Utilisateur non activé. Veuillez vérifier vos e-mails.</string>
+    <string name="error_incorrect_email_password">Email ou mot de passe incorrect. %1$s</string>
+
+    <string name="already_a_member">Déjà membre ? Se connecter ici</string>
+    <string name="successful_signup">Inscription réussie ! Vérification par email envoyée à %1$s</string>
+    <string name="user_data_saved">Données utilisateur enregistrées avec succès !</string>
+    <string name="failed_to_save_user_data">Échec de l enregistrement des données utilisateur. %1$s</string>
+    <string name="failed_to_send_email_verification">Échec de l envoi de la vérification par email. %1$s</string>
+    <string name="failed_to_update_username">Échec de la mise à jour du nom d utilisateur. %1$s</string>
+    <string name="user_is_null_after_signup">L utilisateur est nul après l inscription.</string>
+    <string name="signup_failed">Échec de l inscription. %1$s</string>
+    <string name="passwords_do_not_match">Les mots de passe ne correspondent pas.</string>
+    <string name="agenda_prompt">Prêt à parcourir tout la monde ?</string>
 </resources>

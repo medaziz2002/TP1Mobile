@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:background="#F8F9FA"
+    >
     <ScrollView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
 
         <LinearLayout
+            android:background="@drawable/train"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp"
-            android:background="@color/background"
             tools:context=".MainActivity">
-
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_margin="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="26dp"
+                android:backgroundTint="#673AB7"
+                android:text="☰"
+                android:textColor="#000000"
+                android:textSize="16sp" />
             <!-- Champ Départ -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -45,13 +61,7 @@
                     android:textSize="16sp" />
             </LinearLayout>
 
-            <!-- Liste des suggestions Départ -->
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_suggestions_depart"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:layout_marginBottom="8dp"/>
+
 
             <!-- Bouton "Activer la Localisation" -->
             <LinearLayout
@@ -119,13 +129,7 @@
                     android:textColor="@color/black" />
             </LinearLayout>
 
-            <!-- Liste des suggestions Arrivée -->
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_suggestions_arrivee"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:layout_marginBottom="8dp"/>
+
 
             <!-- Section Activer la Localisation (après Arrivée) -->
             <LinearLayout
@@ -169,12 +173,6 @@
             </LinearLayout>
 
             <!-- Liste des horaires -->
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_horaires"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
             <!-- Bouton Rechercher -->
             <Button
@@ -186,7 +184,30 @@
                 android:elevation="6dp"
                 android:text="@string/rechercher"
                 android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/section_results"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_results"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:padding="16dp"/>
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:menu="@menu/menu_drawer" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "557411430280",
+    "project_id": "train-55559",
+    "storage_bucket": "train-55559.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557411430280:android:63572b1deb747a29a5d43d",
+        "android_client_info": {
+          "package_name": "com.example.tp1application3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACcXGSIovTScpzDxwFMacHm9n5j7_f4h4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

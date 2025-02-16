@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_lang">
+        <item
+            android:id="@+id/menu_lang_fr"
+            android:title="🇫🇷 Français" />
+        <item
+            android:id="@+id/menu_lang_en"
+            android:title="🇬🇧 English" />
+    </group>
+
+    <!-- Nouveau groupe pour les autres options -->
+    <group android:id="@+id/group_options">
+        <!-- Option Notifications -->
+        <item
+            android:id="@+id/menu_notifications"
+            android:title="🔔 Notifications" />
+
+        <!-- Option Réservations -->
+        <item
+            android:id="@+id/menu_reservations"
+            android:title="📅 Réservations" />
+
+        <!-- Option Profil -->
+        <item
+            android:id="@+id/menu_profile"
+            android:title="👤 Profil" />
+
+        <!-- Option Logout -->
+        <item
+            android:id="@+id/menu_logout"
+            android:title="🚪 Logout" />
+    </group>
+</menu>

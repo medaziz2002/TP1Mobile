@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/section_background"
+    android:layout_margin="8dp">
+
+    <!-- Image à gauche -->
+    <ImageView
+        android:id="@+id/img_section"
+        android:layout_width="95dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Icône de transport"
+        android:src="@drawable/sncf" />
+
+    <!-- Informations textuelles -->
+    <TextView
+        android:id="@+id/txt_section"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:text="De: Lyon Part Dieu\nÀ: Paris Gare de Lyon\nDurée: 120 minutes"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    </LinearLayout>

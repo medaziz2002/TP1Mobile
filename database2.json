@@ -1,0 +1,24 @@
+{
+    "reservations": [
+      {
+        "userId": "",
+        "nbPersonnes": 0,
+        "dateReservation": "",
+        "personnes": [
+          {
+            "nom": "",
+            "prenom": ""
+          }
+        ]
+      }
+    ],
+    "notifications": [
+      {
+        "userId": "",
+        "title": "",
+        "message": "",
+        "date": ""
+      }
+    ]
+  }
+  

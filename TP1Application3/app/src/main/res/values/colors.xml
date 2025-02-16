@@ -6,4 +6,17 @@
     <color name="accent">#FFD54F</color>
     <color name="gray">#808080</color>
 
+    <!-- Définir la couleur principale -->
+    <color name="colorPrimary">#FF6F00</color>
+
+    <!-- Définir la couleur de fond des EditText -->
+    <color name="editTextBG">#F1F1F1</color>
+    <color name="light_gray">#F0F0F0</color>
+    <color name="textColor">#000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!-- Définir la couleur blanche -->
+
+
 </resources>
