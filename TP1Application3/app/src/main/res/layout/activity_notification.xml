@@ -22,7 +22,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="599dp">
 
             <LinearLayout
                 android:id="@+id/linearLayout1"
@@ -35,8 +35,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
                     android:fontFamily="sans-serif-medium"
                     android:text="Notifications"
                     android:textColor="@color/white"
@@ -60,8 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageView1"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
 
                 <!-- RecyclerView pour afficher la liste des notifications -->
                 <androidx.recyclerview.widget.RecyclerView
@@ -72,6 +72,17 @@
                     android:padding="8dp" />
 
             </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Retour"
+                android:textColor="@color/white" />
 
         </RelativeLayout>
 

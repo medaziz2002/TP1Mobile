@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialiser les vues
+
         inputDepart = findViewById(R.id.input_depart)
         inputArrivee = findViewById(R.id.input_arrivee)
         btnRechercher = findViewById(R.id.btn_rechercher)
@@ -60,20 +60,21 @@ class MainActivity : AppCompatActivity() {
             drawerLayout.openDrawer(navigationView)
         }
         recyclerResults.layoutManager = LinearLayoutManager(this)
+
+
         navigationView.setNavigationItemSelectedListener { item: MenuItem ->
-            when (item.itemId) {
-                R.id.menu_lang_fr -> changeLanguage("fr")
-                R.id.menu_lang_en -> changeLanguage("en")
-            }
+            handleMenuAction(item.itemId)
+
             drawerLayout.closeDrawers()
             true
         }
 
-        // Cacher les sections liées à la localisation
+
+
         sectionLocalisation.visibility = View.GONE
         sectionTurnOnLocation.visibility = View.GONE
 
-        // Clic sur le bouton "Rechercher"
+
         btnRechercher.setOnClickListener {
             val from = inputDepart.text.toString().trim()
             val to = inputArrivee.text.toString().trim()
@@ -83,10 +84,10 @@ class MainActivity : AppCompatActivity() {
                 getStationIdFromName(from) { fromId ->
                     getStationIdFromName(to) { toId ->
                         if (fromId != null && toId != null) {
-                            // Rendre le datetime dynamique, ici on prend l'heure actuelle
+
                             val datetime = getCurrentDateTime()
 
-                            // Utilisation de l'URL pour récupérer les trajets entre les deux stations
+
                             val url = "https://api.sncf.com/v1/coverage/sncf/journeys?from=$fromId&to=$toId&datetime=$datetime"
                             fetchTrainJourneys(url)
                         } else {
@@ -105,7 +106,7 @@ class MainActivity : AppCompatActivity() {
         return dateFormat.format(Date())
     }
 
-    // Fonction pour obtenir l'ID d'une station à partir de son nom
+
     private fun getStationIdFromName(stationName: String, callback: (String?) -> Unit) {
         val url = "https://api.sncf.com/v1/coverage/sncf/places?q=$stationName"
 
@@ -203,7 +204,7 @@ class MainActivity : AppCompatActivity() {
                             }
 
                             runOnUiThread {
-                                // Mettre à jour le RecyclerView avec les sections
+
                                 recyclerResults.adapter = JourneyAdapter(sectionsList)
                                 sectionResults.visibility = View.VISIBLE
                                 recyclerResults.visibility = View.VISIBLE
@@ -232,35 +233,31 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun formatDateTime(dateTime: String): String {
-        val inputFormat = SimpleDateFormat("yyyyMMdd'T'HHmmss", Locale.getDefault())
-        val outputFormat = SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault())
-        val date = inputFormat.parse(dateTime)
-        return outputFormat.format(date)
-    }
 
     private fun handleMenuAction(itemId: Int) {
         when (itemId) {
             R.id.menu_notifications -> openNotifications()
             R.id.menu_reservations -> openReservations()
-            R.id.menu_profile -> openProfile()
             R.id.menu_logout -> logout()
+            R.id.menu_lang_fr -> changeLanguage("fr")
+            R.id.menu_lang_en -> changeLanguage("en")
         }
-        drawerLayout.closeDrawer(GravityCompat.START)
+
     }
 
     private fun openNotifications() {
-        // Implémentez cette fonction
+
+
+        val intent = Intent(this, NotificationActivity::class.java)
+        startActivity(intent)
     }
 
     private fun openReservations() {
-        // Implémentez cette fonction
-    }
-
-    private fun openProfile() {
-        val intent = Intent(this, ProfileActivity::class.java)
+        val intent = Intent(this, TicketActivity::class.java)
         startActivity(intent)
     }
+
+
 
     private fun logout() {
         val intent = Intent(this, LoginActivity::class.java)
@@ -272,7 +269,6 @@ class MainActivity : AppCompatActivity() {
         LocaleHelper.setLocale(this, lang)
         recreate()
     }
-
 
 
 

@@ -20,10 +20,6 @@
             android:id="@+id/menu_reservations"
             android:title="📅 Réservations" />
 
-        <!-- Option Profil -->
-        <item
-            android:id="@+id/menu_profile"
-            android:title="👤 Profil" />
 
         <!-- Option Logout -->
         <item

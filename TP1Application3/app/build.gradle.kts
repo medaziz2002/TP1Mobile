@@ -40,6 +40,7 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
     implementation("com.google.firebase:firebase-analytics")
+    implementation ("com.firebaseui:firebase-ui-firestore:8.0.2")
     implementation("com.google.firebase:firebase-auth:22.0.0")
     implementation("com.google.firebase:firebase-database:20.3.0")
     implementation("androidx.core:core-ktx:1.15.0")

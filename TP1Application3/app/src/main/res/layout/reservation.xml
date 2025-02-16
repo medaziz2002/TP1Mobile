@@ -11,10 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="3dp"
         app:cardPreventCornerOverlap="false"
@@ -24,26 +21,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <!-- En-tête de la carte -->
             <LinearLayout
                 android:id="@+id/linearLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:fontFamily="sans-serif-medium"
                     android:text="Mes Réservations"
                     android:textColor="@color/white"
-                    android:textSize="22sp" />
-
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
+            <!-- Séparateur décoratif -->
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="20dp"
@@ -54,22 +51,22 @@
                 android:rotation="45"
                 android:src="@drawable/square" />
 
+            <!-- Contenu principal -->
             <RelativeLayout
                 android:id="@+id/relativeLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/imageView1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp">
+                android:layout_margin="16dp"
+                android:padding="8dp">
 
                 <!-- RecyclerView pour afficher la liste des réservations -->
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/reservations_recyclerview"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginBottom="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/print_button"
+                    android:layout_marginBottom="16dp"
                     android:padding="8dp" />
 
                 <!-- Bouton pour imprimer le ticket -->
@@ -78,15 +75,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="16dp"
-                    android:background="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
                     android:text="Imprimer le ticket"
-                    android:textColor="@android:color/white" />
-
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
             </RelativeLayout>
-
         </RelativeLayout>
-
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>

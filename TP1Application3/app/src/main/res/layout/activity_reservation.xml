@@ -18,7 +18,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="346dp">
 
             <LinearLayout
                 android:id="@+id/linearLayout1"
@@ -32,10 +32,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
                     android:text="Réservations"
                     android:textColor="@color/white"
-                    android:textSize="22sp"
-                    android:fontFamily="sans-serif-medium" />
+                    android:textSize="22sp" />
             </LinearLayout>
 
             <ScrollView
@@ -97,6 +97,16 @@
                         android:layout_marginTop="24dp"
                         android:backgroundTint="@color/primary"
                         android:text="Réserver"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="24dp"
+                        android:backgroundTint="@color/primary"
+                        android:text="@string/back"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
                 </LinearLayout>

@@ -16,14 +16,14 @@ class ReservationActivity : AppCompatActivity() {
     private lateinit var formContainer: LinearLayout
     private lateinit var spinnerNbPersonnes: Spinner
     private lateinit var btnReserver: Button
-
+    private lateinit var btnBack: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reservation)
         spinnerNbPersonnes = findViewById(R.id.spinner_nb_personnes)
         btnReserver = findViewById(R.id.btn_reserver)
+        btnBack=findViewById(R.id.back)
         formContainer = findViewById(R.id.form_container)
-
         val nbPersonnes = arrayOf("1", "2", "3", "4", "5")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, nbPersonnes)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -37,6 +37,11 @@ class ReservationActivity : AppCompatActivity() {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
+
+        btnBack.setOnClickListener {
+            // Utiliser onBackPressed pour revenir à l'activité précédente
+            onBackPressed()
+        }
         btnReserver.setOnClickListener {
             val nb = spinnerNbPersonnes.selectedItem.toString().toIntOrNull() ?: 1
             val dateReservation = SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault()).format(Date())
@@ -49,18 +54,16 @@ class ReservationActivity : AppCompatActivity() {
             val personnes = mutableListOf<HashMap<String, String>>()
 
             // Ajouter les personnes à la liste
-            for (i in 1..nb) {
-                val nom = findViewById<EditText>(resources.getIdentifier("edtNomPersonne$i", "id", packageName)).text.toString()
-                val prenom = findViewById<EditText>(resources.getIdentifier("edtPrenomPersonne$i", "id", packageName)).text.toString()
+            for (i in 0 until nb) {
+                val nom = edtNoms[i].text.toString()
+                val prenom = edtPrenoms[i].text.toString()
 
-                // Validation des champs
-                if (nom.isEmpty() || prenom.isEmpty()) {
-                    Toast.makeText(this, "Veuillez remplir le nom et prénom de la personne $i.", Toast.LENGTH_SHORT).show()
+                if (nom.isNotEmpty() && prenom.isNotEmpty()) {
+                    personnes.add(hashMapOf("nom" to nom, "prenom" to prenom))
+                } else {
+                    Toast.makeText(this, "Veuillez remplir les informations de toutes les personnes.", Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
                 }
-
-                // Ajouter la personne si les champs sont valides
-                personnes.add(hashMapOf("nom" to nom, "prenom" to prenom))
             }
 
             // Créer un objet Reservation
@@ -107,8 +110,13 @@ class ReservationActivity : AppCompatActivity() {
         }
     }
 
+    private val edtNoms = mutableListOf<EditText>()
+    private val edtPrenoms = mutableListOf<EditText>()
+
     private fun afficherFormulaire(nbPersonnes: Int) {
         formContainer.removeAllViews()
+        edtNoms.clear()
+        edtPrenoms.clear()
 
         for (i in 1..nbPersonnes) {
             val inputLayout = LinearLayout(this).apply {
@@ -126,6 +134,7 @@ class ReservationActivity : AppCompatActivity() {
                     LinearLayout.LayoutParams.WRAP_CONTENT
                 )
             }
+            edtNoms.add(edtNom)
             inputLayout.addView(edtNom)
 
             val edtPrenom = EditText(this).apply {
@@ -135,6 +144,7 @@ class ReservationActivity : AppCompatActivity() {
                     LinearLayout.LayoutParams.WRAP_CONTENT
                 )
             }
+            edtPrenoms.add(edtPrenom)
             inputLayout.addView(edtPrenom)
 
             formContainer.addView(inputLayout)
